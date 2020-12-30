@@ -1,4 +1,4 @@
-## Capstone---Fraud-Detection
+## Capstone: Credit Fraud-Detection 
 _Supervised learning on a dataset of card transactions.  Try to develop a model to detect fraudulent transactions. Learn about fraud behaviours and customer purchasing insights._
 
 
