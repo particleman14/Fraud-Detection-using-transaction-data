@@ -1,9 +1,9 @@
 ## Capstone---Fraud-Detection
-* Supervised learning on a dataset of card transactions.  Try to develop a model to detect fraudulent transactions. Learn about fraud behaviours and customer purchasing insights.
+_Supervised learning on a dataset of card transactions.  Try to develop a model to detect fraudulent transactions. Learn about fraud behaviours and customer purchasing insights._
 
 
 __Capstone EDA__ = Take the existing dataset and explore it's features.  Try to figure out what the differences are between fraud and legitimate transactions. 
-  This dataset contains very few null items and was relatively straightforward to clean and pre-process. The main feature about this dataset is the highly imbalanced nature of the fraud/no-fraud transactions (fraud cases % : 0.016).    
+  This dataset contains very few null items and was relatively straightforward to clean and pre-process. The main feature about this dataset is the highly imbalanced nature of the fraud/no-fraud transactions (fraud cases % : 0.016).  We identified a few features to lookout for and figured out which columns would be relevant to building our model.      
   
 __Capstone Modeling__ = We compare a number of different models to see how effective they are.  We arrive at the XGBoost model as its overall performance is best.  This model is very popular for fraud and other highly imbalanced datasets.  Typically resampling methods have been employed(SMOTE,undersampling, etc.) to rebalance the dataset and give more weight to the fraud rows.  However, XGboost doesn't necessarily improve with normalized/standardized numeric data.  Instead, it's the features themselves that become most important.  Running this model we get an AUC of around .74 even after tuning hyperparameters. The most important features being transactionAmount, currentBalance and availableMoney (the only 3 numeric features!)
 https://www.sciencedirect.com/science/article/abs/pii/S0167865520302129
