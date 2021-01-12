@@ -1,6 +1,8 @@
 ## Capstone: Credit Fraud-Detection 
 _Supervised learning on a dataset of card transactions.  Try to develop a model to detect fraudulent transactions. Learn about fraud behaviours and customer purchasing insights._
 
+__Introduction__ = Credit Card fraud has been a growing problem in the digital age.  In 2020, covid-19 accelerated this trend and we are seeing record numbers of credit card transactions.  Along with these trends, fraudulent transactions have been increasing in size and sophistication.  The cost of fraud includes the gross amount but also the associated servicing which takes time and resources.  Having an efficient model to help determine fraud can greatly improve efficiency and customer satisfaction.  Companies can also use these models to gain insight into fraudulent behavior to further protect themselves and customers.  Typically companies already have some combination of systems or models in place to detect fraud but they should consider updating to contemporary models that have greater performance (especially in the last couple years).  Let’s try to build a model using basic transaction data.
+
 
 __Capstone EDA__ = Take the existing dataset and explore it's features.  Try to figure out what the differences are between fraud and legitimate transactions. 
   This dataset contains very few null items and was relatively straightforward to clean and pre-process. The main feature about this dataset is the highly imbalanced nature of the fraud/no-fraud transactions (fraud cases % : 0.016).  We identified a few features to lookout for and figured out which columns would be relevant to building our model.      
@@ -24,4 +26,7 @@ __Capstone Modeling-PyCaret__ = PyCaret is an end to end ML pocketknife type of 
 * Second, utilizing a blending feature in PyCaret, we combined the top4 performing models and managed to create a blended model that achieved .84 AUC just slightly higher than the individual gradient boost models. However, the cavet with this model is we cannot view the feature importances so the results are a bit of a blackbox.  
 * Next, we create the top 3 models individually (all gradient boosting!) and analyze the results and more importantly the features.  
 * What's most interesting is that all 3 models used mostly differing features to comes up with their predictions.  The various features give us additional paths to explore and test for future optimization.  
+
+__Takeaways__ = Overall the gradient boosting models have shown to be superior when it comes to binary classification of rare/infrequent events often with highly skewed distributions. We found that we can eke out a little bit of performance by blending these models together in PyCaret. The most effective way to improve our prediction power is by analyzing the features utilized by the models to help inform our next direction of analysis or inquiry. This in turn will help us create better features and further refine the model.  It's true what they say, model optimization is more often than not a form of feature engineering. Now we have a model that is fairly strong and ready to be deployed, while we also have a few new lines of inquiry(from our feature importances) to explore further improvements.
+
 
