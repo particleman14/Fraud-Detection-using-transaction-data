@@ -18,7 +18,7 @@ https://ieeexplore.ieee.org/abstract/document/9214206
 
 __Capstone Modeling-FeatureTools:__= The next step is to try and create features in order to improve the model.  Typically, you can use feature interactions, representations, or other techniques based on domain specific knowledge.  However, in this notebook we try to autogenerate a wide range of features using the FeatureTools module.  We are able to create relationships between various features of dataset and the module generates numerous new features.  
 * Starting with 16 columns, we manage to create an additional 154 features from this tool.  After encoding the categoricals we end up with around 464 columns.  This is a very brute force approach but it did yield better results! (AUC .80)  
-* This model also used entirely different features than the original XGBoost model.(num_unique,count,mode)  We can compare the features created in this model to gain insight to where Fraud is occuring and see if we can further increase our predictive power.  
+* This model also used entirely different features than the original XGBoost model (num_unique,count,mode).  We can compare the features created in this model to gain insight to where Fraud is occuring and see if we can further increase our predictive power.  
 
 
 __Capstone Modeling-PyCaret:__  PyCaret is an end-to-end ML pocketknife type of module requiring little code and quick development.  We can setup various environments with differnet amounts of pre-processing,feature generation,model selection, blending, hyperparameter tuning, etc.   I found using this tool very handy, however my memory and computer were bogging down very hard.  Overall we achieved the best results from using this module.  
