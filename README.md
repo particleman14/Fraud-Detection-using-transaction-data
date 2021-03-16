@@ -12,7 +12,8 @@ __EDA:__  Take the existing dataset and explore it's features.  Try to figure ou
   
 __Modeling-Initial:__  We compare a number of different models to see how effective they are.  We determined that the XGBoost model has the best overall performance.  This model is very popular for fraud and other highly imbalanced datasets.  Typically, resampling methods have been employed (SMOTE, undersampling, etc.) to rebalance the dataset and give more weight to the fraud rows.  However, XGBoost doesn't necessarily improve with normalized/standardized numeric data.  Instead, it's the features themselves that become most important.  Running this model, we get an AUC of around .74 even after tuning hyperparameters. 
 The most important features were transactionAmount, currentBalance and availableMoney (the only 3 numeric features!)
- <img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/xgb%20original%20optimize%20auc.PNG' width="200" height="300"> <img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/xgb%20original%20class%20report.PNG' width="240" height="200"><img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/xgb%20original%20features.PNG' width="240" height="240">
+
+<img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/xgb%20original%20optimize%20auc.PNG' width="240" height="300"> <img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/xgb%20original%20class%20report.PNG' width="240" height="200"><img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/xgb%20original%20features.PNG' width="240" height="240">
 
 A few articles on XGBoost... Over the last couple of years this model has become very popular for its performance.
 https://www.sciencedirect.com/science/article/abs/pii/S0167865520302129
