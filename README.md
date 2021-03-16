@@ -1,4 +1,4 @@
-## Capstone: Credit Fraud-Detection 
+## Credit Fraud-Detection 
 _Supervised learning on a dataset of credit card transactions.  Develop a model to detect fraudulent transactions using contemporary methods. Learn about fraud behaviours and customer purchasing insights._
 
 <img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/nilson%20cc%20fraud%20chart.PNG' width="240" height="200"> <img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/nilson%20chart.PNG' width="240" height="200"><img src='https://github.com/particleman14/Capstone---Fraud-Detection/blob/main/Files/Screens/nilson%20chart.PNG' width="240" height="200">
